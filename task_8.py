@@ -22,7 +22,7 @@ def log_exceptions(log_filename="errors.log"):
         return wrapper
     return decorator
 
-# Example usage
+
 @log_exceptions("app_errors.log")
 def divide(a, b):
     return a / b
