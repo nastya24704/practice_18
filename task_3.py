@@ -20,4 +20,4 @@ def count_ending_with(start: int, end: int, divisor: int, last_digit: int) -> in
 
 if __name__ == "__main__":
     a, b, c, d = 10, 50, 3, 5
-    print(f"Count: {count_ending_with(a, b, c, d)}")
+    print(count_ending_with(a, b, c, d))
