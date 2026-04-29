@@ -21,4 +21,4 @@ def sum_multiples_of_both(start: int, end: int, divisor1: int, divisor2: int) ->
 
 if __name__ == "__main__":
     a, b, c, d = 1, 30, 3, 5
-    print(f"Sum: {sum_multiples_of_both(a, b, c, d)}")
+    print(sum_multiples_of_both(a, b, c, d))
