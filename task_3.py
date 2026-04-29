@@ -19,6 +19,7 @@ def count_ending_with(start: int, end: int, divisor: int, last_digit: int) -> in
 
 
 if __name__ == "__main__":
-    a, b, c, d = int(input("start")), int(input("end")), int(input("dicisor")), int(input("last_digit"))
+    a, b, c, d = int(input("start")), int(input("end")), int(input("dicisor")), 
+    int(input("last_digit"))
     result = count_ending_with(a, b, c, d)
     print(result)
