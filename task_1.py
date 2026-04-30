@@ -6,7 +6,7 @@ def count_uppercase_from_to(s: str, i: int, j: int) -> int:
     return len(list(filter(lambda char: char.isupper(), s[i - 1:j])))
 
 
-text = input("Anastasiya Elizaveta Vladimir")
+text = input("For example: Anastasiya Elizaveta Vladimir")
 start, end = int(input()), int(input())
 result = count_uppercase_from_to(text, start, end)
 print(result)
