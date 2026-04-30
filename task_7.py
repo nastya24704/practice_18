@@ -19,5 +19,6 @@ def get_list():
     return [1, 2, 3]
 
 
-print(get_dict("Nastya", 20))
-print(get_list())
+if __name__ == "__main__":
+    print(get_dict("Nastya", 20))
+    print(get_list())
