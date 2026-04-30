@@ -41,5 +41,3 @@ if __name__ == "__main__":
         parse_int("abc")
     except ValueError:
         pass
-    
-    print("Check the log file for recorded exceptions.")
