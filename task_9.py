@@ -29,7 +29,7 @@ def to_format(format_type=None):
                     import yaml
                     return yaml.dump(data, allow_unicode=True)
                 except ImportError:
-                    return f"# Error: PyYAML not installed. Data: {data}"
+                    return f"Error: PyYAML not installed. Data: {data}"
             else:
                 raise ValueError(f"Unsupported format: {target_format}")
                 
@@ -39,7 +39,7 @@ def to_format(format_type=None):
 
 @to_format()
 def get_user():
-    return {"id": 1, "name": "John"}
+    return {"id": 1, "name": "Nastya"}
 
 @to_format("xml")
 def get_items():
