@@ -1,9 +1,16 @@
 from functools import reduce
 import math
 
+
+def is_perfect_square(n: int) -> bool:
+        root = math.isqrt(n)
+        return root * root == n
+
+
 def product_of_square(start: int, end: int, divisor: int) -> int:
     """
-    Calculate the product of natural numbers in [start, end] that are perfect squares and multiples of divisor.
+    Calculate the product of natural numbers in [start, end] that are perfect squares 
+    and multiples of divisor.
 
     Args:
         start: Lower bound (inclusive).
@@ -16,10 +23,6 @@ def product_of_square(start: int, end: int, divisor: int) -> int:
     lower_bound = max(start, 1)
     numbers = range(lower_bound, end + 1)
     
-    
-    def is_perfect_square(n: int) -> bool:
-        root = math.isqrt(n)
-        return root * root == n
 
     filtered_nums = filter(lambda x: is_perfect_square(x) and x % divisor == 0, numbers)
     
