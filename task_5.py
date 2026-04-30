@@ -29,5 +29,6 @@ def product_of_square(start: int, end: int, divisor: int) -> int:
 
 
 if __name__ == "__main__":
-    a, b, c = 1, 50, 2
-    print(f"Product: {product_of_square(a, b, c)}")
+    a, b, c = int(input('start')), int(input('end')), int(input('divisor')),
+    result = product_of_square(a, b, c)
+    print(result)
