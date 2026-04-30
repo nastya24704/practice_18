@@ -17,6 +17,6 @@ def sort_list(json_string: str) -> list:
 
 
 if __name__ == "__main__":
-    input_json = '[["apple", 5], ["banana", 2], ["cherry", 10], ["date", 2]]'
+    input_json = input(' as example [["apple", 5], ["banana", 2], ["cherry", 10]')
     result = sort_list(input_json)
-    print(f"Sorted: {result}")
+    print(result)
