@@ -19,5 +19,8 @@ def greet(name):
 
 
 if __name__ == "__main__":
-    square(5)  
-    greet("nastya") 
+     x = int(input())
+    square(x)
+    
+    name = input("for example: nastya")
+    greet(name)
