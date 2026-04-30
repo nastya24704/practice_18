@@ -11,7 +11,7 @@ def print_result_single_arg(func):
 
 @print_result_single_arg
 def square(x):
-    return x * x
+    return x ** 2
 
 @print_result_single_arg
 def greet(name):
@@ -19,7 +19,7 @@ def greet(name):
 
 
 if __name__ == "__main__":
-     x = int(input())
+    x = int(input())
     square(x)
     
     name = input("for example: nastya")
